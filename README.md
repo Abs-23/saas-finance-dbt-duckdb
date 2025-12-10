@@ -1,7 +1,10 @@
 # SaaS Finance Analytics – dbt, DuckDB & Power BI
 
+
+<img width="1418" height="793" alt="Image" src="https://github.com/user-attachments/assets/bc73060f-9e87-42c0-bfcf-7aa4f7309c1f" />
+
 An executive SaaS dashboard for MRR and churn, built directly on top of the dbt + DuckDB models in this repository.
-![SaaS Finance Power BI Dashboard](snapshots/report.png)
+
 
 ## What this project is
 
@@ -24,3 +27,4 @@ I cared less about covering every possible metric and more about doing a few imp
 3. Open the Power BI report and point it at those CSVs.
 
 This project is mainly about showing how I think through modeling SaaS revenue data, testing it, and then turning it into something that tells a clear story in Power BI.
+
