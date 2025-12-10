@@ -1,6 +1,7 @@
 # SaaS Finance Analytics – dbt, DuckDB & Power BI
 
-Power BI report: an executive SaaS dashboard for MRR and churn, built directly on top of the dbt + DuckDB models in this repository.
+An executive SaaS dashboard for MRR and churn, built directly on top of the dbt + DuckDB models in this repository.
+![SaaS Finance Power BI Dashboard](snapshots/report.png)
 
 ## What this project is
 
