@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_account_revenue_churn
+    description: "Account-level finance mart combining recurring revenue with churn events."
+    columns:
+      - name: account_id
+        description: "Unique identifier for the customer account."
+        tests:
+          - not_null
+          - unique
+      - name: total_mrr
+        description: "Total normalized monthly recurring revenue across all active subscriptions for the account."
+        tests:
+          - not_null
+      - name: first_churn_date
+        description: "Date of the first recorded churn event for the account, if any."
+      - name: churn_event_count
+        description: "Number of churn events recorded for the account."

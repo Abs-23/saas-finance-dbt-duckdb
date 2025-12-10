@@ -1,0 +1,18 @@
+# Python / venv
+.venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# dbt / DuckDB artifacts
+logs/
+target/
+dbt_packages/
+saas_finance_dbt.duckdb/
+analyses/
+marcos/
+

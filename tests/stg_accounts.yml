@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_accounts
+    description: "Staged account data from the ravenstack_accounts seed; one row per customer account."
+    columns:
+      - name: account_id
+        description: "Unique identifier for the customer account."
+        tests:
+          - not_null
+          - unique
+      - name: account_name
+        description: "Name of the customer organization."
+        tests:
+          - not_null
+      - name: churn_flag
+        description: "Flag indicating whether the account is currently churned."

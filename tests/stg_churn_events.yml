@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_churn_events
+    columns:
+      - name: churn_event_id
+        tests:
+          - not_null
+          - unique
+      - name: account_id
+        tests:
+          - not_null
+      - name: churn_date
+        tests:
+          - not_null

@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_subscriptions
+    description: "Staged subscription data from ravenstack_subscriptions; one row per subscription."
+    columns:
+      - name: subscription_id
+        description: "Unique identifier for a subscription."
+        tests:
+          - not_null
+          - unique
+      - name: account_id
+        description: "Foreign key to the owning account."
+        tests:
+          - not_null
+      - name: mrr_amount
+        description: "Monthly recurring revenue booked for this subscription (if available)."
+      - name: arr_amount
+        description: "Annual recurring revenue booked for this subscription (if available)."
