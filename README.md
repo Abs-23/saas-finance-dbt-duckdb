@@ -16,10 +16,10 @@ I cared less about covering every possible metric and more about doing a few imp
 - Designing a small, purposeful **star schema** for BI: an accounts dimension with two fact tables for MRR and revenue/churn.
 - Building an **executive‑style dashboard** that highlights MRR, churned accounts and churn rate, plus trends over time and breakdowns by plan tier and industry.
 
-## How to run it (high level)
+## How to run it
 
 1. Use dbt to build the models on top of DuckDB.
 2. Run the Python export script to write the key tables out as CSV files.
-3. Open the Power BI report and point it at those CSVs (or open the `.pbix` file and adjust the file paths if needed).
+3. Open the Power BI report and point it at those CSVs.
 
 This project is mainly about showing how I think through modeling SaaS revenue data, testing it, and then turning it into something that tells a clear story in Power BI.
